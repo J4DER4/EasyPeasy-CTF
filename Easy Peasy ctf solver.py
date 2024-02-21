@@ -93,7 +93,7 @@ while counter > 0:
     #DUMP KEYCHAIN
 print("\nSTARTING DUMP AT INDEX: ",50000-offset,"\n")
 i = 0
-while i < 32:
+while i < len(unhex(encrypted_flag)):
     r.recvuntil(b"?")
     r.sendline(original_char)
     r.recvline()
