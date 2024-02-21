@@ -1,4 +1,4 @@
-Automatic solver for picoCTF easypeasy, will also dump the hidden keychain used to decrypt given key. 
+Automatic solver for picoCTF easypeasy, will also dump the hidden keychain used to decrypt given flag. 
 
 Requirements: PWNlib, python3
 
