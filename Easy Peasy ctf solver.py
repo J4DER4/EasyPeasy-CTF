@@ -9,8 +9,10 @@ offset = 50000
 maxchunk = 1000
 host = 'mercury.picoctf.net'
 port = 36981
-#FUNC
 
+
+#FUNC
+    #Used for decoding key values
 def find_key(original_char, result):
     return ord(original_char) ^ int("0x" + result, 16)
 
@@ -107,8 +109,9 @@ print("\nResulting keychain: ",keychain)
 split_flag = split_flag_to_list(encrypted_flag)
 print("\n Splitted Flag", split_flag)
 
-    #DECODE WITH KEYCHAIN
+    #DECODE WITH KEYCHAIN OBTAINED
 print("\nStarting decoding with keychain")
+    #rest is done in decoder()
 decoder(split_flag,keychain)
 print("\n")
 r.close
